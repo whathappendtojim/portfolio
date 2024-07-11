@@ -1,0 +1,101 @@
+/* Define the background color and texture inspired by the painting */
+body {
+    background-color: #f5e9dc; /* Light beige color from the painting background */
+    background-image: url('path/to/texture.png'); /* Subtle paper texture */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000000; /* Black color for text */
+    font-family: 'Raleway', sans-serif; /* Base font for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the content */
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #000000; /* Black border inspired by the ink strokes */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly translucent white background */
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); /* Blur effect */
+    border-radius: 10px;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid #000000;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000; /* Black text for navigation links */
+    font-family: 'Dancing Script', cursive; /* Calligraphic font for links */
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #555555; /* Darker gray on hover */
+}
+
+/* Header styles */
+header h1 {
+    color: #000000; /* Black text for header */
+    font-family: 'Dancing Script', cursive; /* Calligraphic font */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Main content styles */
+main p {
+    color: #333333; /* Dark gray text for paragraph */
+    font-family: 'Raleway', sans-serif; /* Readable font */
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+/* Add some pastel colors for additional inspiration */
+.container h1, .container p {
+    background-image: linear-gradient(90deg, rgba(255, 182, 193, 0.3), rgba(173, 216, 230, 0.3)); /* Light pink and blue gradient */
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Add decorative elements */
+.container::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #000000;
+    margin: 0 auto 20px auto;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #000000;
+    margin: 20px auto 0 auto;
+}

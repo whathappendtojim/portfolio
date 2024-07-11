@@ -1,0 +1,25 @@
+<!-- portfolio/templates/portfolio/python_projects.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Projects</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Python Projects</h1>
+        </header>
+        <main>
+            <ul>
+                {% for project in projects %}
+                    <li><a href="{{ project.file.url }}" download>{{ project.title }}</a></li>
+                {% endfor %}
+            </ul>
+            <a href="{% url 'home' %}">Back to Home</a>
+        </main>
+    </div>
+</body>
+</html>
